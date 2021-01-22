@@ -74,7 +74,7 @@ public class Reproducer {
     }
 
     private static void setSystemProperties() {
-        System.setProperty("javax.net.debug", "ssl,handshake");
+        System.setProperty("javax.net.debug", "all");
         System.setProperty("jdk.tls.namedGroups", "secp256r1");
         System.setProperty("jdk.tls.server.SignatureSchemes", "rsa_pkcs1_sha256");
         System.setProperty("jdk.tls.client.SignatureSchemes", "rsa_pkcs1_sha256");
